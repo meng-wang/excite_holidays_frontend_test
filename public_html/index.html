@@ -3,24 +3,25 @@
     <head>
         <title>Front-end test for Excite Holiday Web Developer</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
     <body>
         <div id="header">
             <div id="header-top">
                 <div id="header-top-left">
-                    <img src="http://lorempixel.com/200/100/" alt="logo" title="Welcome to Excite Holiday!">
-                    <ul id="nav_bar">
-                        <li>
-                            Section 1
-                            <ul>
+                    <img id="logo-img" src="http://lorempixel.com/100/50/" alt="logo" title="Welcome to Excite Holiday!">
+                    <ul id="nav-bar">
+                        <li class="nav-top-item">
+                            <a class="inverted" href="#section1">Section 1</a>
+                            <ul id="sec-1-sub">
                                 <li>Sub 1</li>
                                 <li>Sub 2</li>
                                 <li>Sub 3</li>
                             </ul>
                         </li>
-                        <li>
-                            Section 2
-                            <ul>
+                        <li class="nav-top-item">
+                            <a href="#section2">Section 2</a>
+                            <ul id="sec-2-sub">
                                 <li>Sub 1</li>
                                 <li>Sub 2</li>
                                 <li>Sub 3</li>
@@ -30,43 +31,59 @@
                 </div>                
                 <div id="header-top-right">
                     <a href="#login">Log in</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="#signup">Sign up</a>
                 </div>
+                <div class="blank"></div>
             </div>
             <div id="header-bottom">
-                <a href="#item1">Item 1</a>
-                <a href="#item2">Item 2</a>
-                <a href="#item3">Item 3</a>
-                <a href="#item4">Item 4</a>
-                <!-- Please note, the following form action is assumed. Change accordingly. -->
-                <form action="search.php" method="post">
-                    <input type="text">
-                    <input type="button" value="search">
-                </form>
+                <div id="header-bottom-links">
+                    <a href="#item1">Item 1</a>
+                    <a href="#item2">Item 2</a>
+                    <a href="#item3">Item 3</a>
+                    <a href="#item4">Item 4</a>
+                </div>
+                <div id="header-bottom-search">
+                    <!-- Please note, the following form action is assumed. Change accordingly. -->
+                     <form action="search.php" method="post">
+                        <input type="text">
+                        <input type="button" value="search">
+                    </form>
+                </div>
+                <div class="blank"></div>
             </div>
         </div>
         <div id="middle">
             <div id="middle-media-grid">
                 <div class="media-item-left" title="media 1">
-                    <img alt="an image" src="http://lorempixel.com/200/200/">
+                    <img alt="an image" src="http://lorempixel.com/300/300/">
                 </div>
                 <div class="media-item-left" title="media 2">
-                    <img alt="an image" src="http://lorempixel.com/200/200/">
+                    <img alt="an image" src="http://lorempixel.com/300/300/">
                 </div>
                 <div class="media-item-right" title="media 3">
-                    <img alt="an image" src="http://lorempixel.com/200/200/">
+                    <img alt="an image" src="http://lorempixel.com/300/300/">
                 </div>
+                <div class="blank"></div>
                 <div class="media-item-left" title="media 4">
-                    <img alt="an image" src="http://lorempixel.com/200/100/">
-                    <p>Image Caption</p>
+                    <img alt="an image" src="http://lorempixel.com/300/200/">
+                    <p>
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet
+                    </p>
                 </div>
                 <div class="media-item-left" title="media 5">
-                    <iframe width="200" height="200" src="http://www.youtube.com/embed/kmz7mV1WavA" frameborder="0"></iframe>
+                    <iframe width="300" height="300" src="http://www.youtube.com/embed/kmz7mV1WavA" frameborder="0"></iframe>
                 </div>
                 <div class="media-item-right" title="media 6">
                     <h5>Small Header</h5>
-                    <p>Example Text</p>
+                    <p>
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.
+                    </p>
                 </div>
+                <div class="blank"></div>
             </div>
             <div id="tabbed-content">
                 <div id="tabs">
