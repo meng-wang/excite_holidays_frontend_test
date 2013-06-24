@@ -97,6 +97,35 @@ div.media-item-right {
     border: 1px solid gray;
 }
 
+div.tab, div.tab-selected{
+    font-size: 12pt;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 0 1em 0 0;
+    padding: 0.5em;
+    text-align: center;
+    width: 5em;
+    background-color: cadetblue;
+    color: white;
+    display: inline-block;
+    margin: 0;
+}
+
+div.tab-selected {
+    background-color: #272f58;
+}
+
+div.tab-content {
+    border: 1px solid gray;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+div#tab-content4, div#tab-content2, div#tab-content3 {
+    display: none;
+}
+
 div#footer {
     width: 100%;
     text-align: center;
