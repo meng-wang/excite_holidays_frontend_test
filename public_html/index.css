@@ -132,7 +132,10 @@ div#footer {
     background-color: #272f58;
     color: white;
     font-size: 10pt;
-    padding: 1em;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    top:500px;
 }
 
 a {
