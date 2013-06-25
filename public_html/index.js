@@ -104,6 +104,31 @@ function ShowTab(tab_name, tab_content_name) {
     document.getElementById(tab_name).className = "tab-selected";
 }
 
+function ShowSub(top_menu_item, sub_menu_name) {
+    //Show sub menu if browser is IE 6 or lower version.
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ 
+        var ieversion = new Number(RegExp.$1);
+        if (ieversion < 7) {
+            top_menu_item.style.backgroundColor = "#272f58";
+            top_menu_item.style.color = "white";
+            
+            document.getElementById(sub_menu_name).style.display = "block";
+        }
+    }
+}
+
+function HideSub(top_menu_item, sub_menu_name) {
+    //Hide sub menu if browser is IE 6 or lower version.
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ 
+        var ieversion = new Number(RegExp.$1);
+        if (ieversion < 7) {
+            top_menu_item.style.backgroundColor = "transparent";
+            top_menu_item.style.color = "black";
+            document.getElementById(sub_menu_name).style.display = "none";
+        }
+    }
+}
+
 function OnLoad(){
     SetFooter();
     SplitText();

@@ -31,22 +31,39 @@ div#nav-bar {
     margin: auto auto 0.5em 2em;
 }
 
-li.nav-top-item, li.nav-top-item-inverted {
+li.nav-top-item {
     display: inline;
     font-size: 13pt;
     font-weight: bold;
     padding: 0.5em;
     margin-right: 1em;
+    position: relative;
 }
 
-li.nav-top-item-inverted {
+li.nav-top-item:hover {
     background-color: #272f58;
     color: white;
+    box-shadow: 2px 2px 2px gray;
 }
 
 ul#sec-1-sub, ul#sec-2-sub {
     display: none;
     list-style: none;
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 11pt;
+    text-align: center;
+    font-weight: normal;
+    padding: 0.5em;
+    box-shadow: 4px 4px 2px gray;
+    border:1px solid gray;
+}
+
+ul#nav-menu li:hover ul{
+    display: block;
 }
 
 div#header-top-right {
@@ -217,6 +234,10 @@ div#footer {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 div.blank {
