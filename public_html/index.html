@@ -41,20 +41,22 @@
                 <div class="blank"></div>
             </div>
             <div id="header-bottom">
-                <div id="header-bottom-links">
-                    <a href="#item1">Item 1</a>
-                    <a href="#item2">Item 2</a>
-                    <a href="#item3">Item 3</a>
-                    <a href="#item4">Item 4</a>
+                <div id="header-bottom-limited">
+                    <div id="header-bottom-links">
+                        <a href="#item1">Item 1</a>
+                        <a href="#item2">Item 2</a>
+                        <a href="#item3">Item 3</a>
+                        <a href="#item4">Item 4</a>
+                    </div>
+                    <div id="header-bottom-search">
+                        <!-- Please note, the following form action is assumed. Change accordingly. -->
+                         <form action="search.php" method="post">
+                            <input type="text">
+                            <input type="button" value="search">
+                        </form>
+                    </div>
+                    <div class="blank"></div>
                 </div>
-                <div id="header-bottom-search">
-                    <!-- Please note, the following form action is assumed. Change accordingly. -->
-                     <form action="search.php" method="post">
-                        <input type="text">
-                        <input type="button" value="search">
-                    </form>
-                </div>
-                <div class="blank"></div>
             </div>
         </div>
         <div id="middle">
@@ -71,7 +73,7 @@
                 <div class="blank"></div>
                 <div class="media-item-left" title="media 4">
                     <img alt="an image" src="http://lorempixel.com/300/200/">
-                    <p>
+                    <p class="media-item-p">
                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                         sed diam nonummy nibh euismod tincidunt ut laoreet
                     </p>
@@ -80,8 +82,8 @@
                     <iframe width="300" height="300" src="http://www.youtube.com/embed/kmz7mV1WavA" frameborder="0"></iframe>
                 </div>
                 <div class="media-item-right" title="media 6">
-                    <h5>Small Header</h5>
-                    <p>
+                    <h5 class="media-item-p">Small Header</h5>
+                    <p class="media-item-p">
                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                         sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                         magna aliquam erat volutpat.
@@ -89,7 +91,7 @@
                 </div>
                 <div class="blank"></div>
             </div>
-            <div id="tabbed-content">
+            <div id="tabbed">
                 <div id="tabs">
                     <div class="tab-selected" id="tab1">TAB 1</div>
                     <div class="tab" id="tab2">TAB 2</div>
@@ -188,6 +190,7 @@
                 </div>
                 <div id="to-be-shown-col1"></div>
                 <div id="to-be-shown-col2"></div>
+                <div class="blank"></div>
             </div>
         </div>
         <div id="footer">

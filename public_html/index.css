@@ -10,7 +10,7 @@ div#header {
 }
 
 div#header-top {
-    width: 80%;
+    width: 1024px;
     margin: auto;
 }
 
@@ -52,7 +52,7 @@ ul#sec-1-sub, ul#sec-2-sub {
 div#header-top-right {
     float: right;
     display: inline;
-    width: 60%;
+    width: 38%;
     text-align: right;
     margin: 1em auto 0.5em -41%;
     font-size: 12pt;
@@ -66,21 +66,25 @@ div#header-bottom {
     padding: 0.5em;
 }
 
+div#header-bottom-limited {
+    width: 1024px;
+    margin: auto;
+}
+
 div#header-bottom-links {
     float: left;
-    width: 40%;
-    margin: auto auto auto 20%;
+    width: 60%;
 }
 
 div#header-bottom-search {
     float: right;
-    width: 20%;
-    margin: auto 20% auto -41%;
+    width: 38%;
+    margin: auto 1em auto -39%;
 }
 
 div#middle {
-    width: 80%;
-    margin: 2em auto auto auto;
+    width: 1024px;
+    margin: 50px auto auto auto;
 }
 
 div#middle-media-grid {
@@ -92,7 +96,7 @@ div.media-item-left {
     width: 300px;
     height: 300px;
     float: left;
-    margin: auto 80px 20px auto;
+    margin: auto 60px 20px auto;
     border: 1px solid gray;
     box-shadow: 2px 2px 2px gray;
 }
@@ -103,6 +107,15 @@ div.media-item-right {
     margin: auto 0 20px -301px;
     float: right;
     border: 1px solid gray;
+}
+
+p.media-item-p {
+    padding: 0.5em;
+}
+
+div#tabbed {
+    width: 100%;
+    margin: 50px auto auto auto;
 }
 
 div.tab, div.tab-selected{
@@ -132,6 +145,25 @@ div.tab-content {
 
 div#tab-content4, div#tab-content2, div#tab-content3 {
     display: none;
+}
+
+div#fluid-text {
+    margin: 2em auto 2em auto;
+    
+}
+
+div#to-be-shown-col1, div#to-be-shown-col2 {
+    width: 490px;
+    text-align: justify;
+    display: none;
+}
+
+div#to-be-shown-col1 {
+    float: left;
+}
+
+div#to-be-shown-col2 {
+    float: right;
 }
 
 div#footer {
