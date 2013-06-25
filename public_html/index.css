@@ -21,19 +21,27 @@ div#header-top-left {
 }
 
 img#logo-img {
-    display: inline;
+    float: left;
     border: none;
-    height: 50px;
+    height: 80px;
 }
 
-ul#nav-bar {
-    display: inline;
+div#nav-bar {
+    float: left;
+    margin: auto auto 0.5em 2em;
 }
 
-li.nav-top-item {
+li.nav-top-item, li.nav-top-item-inverted {
     display: inline;
     font-size: 13pt;
     font-weight: bold;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+li.nav-top-item-inverted {
+    background-color: #272f58;
+    color: white;
 }
 
 ul#sec-1-sub, ul#sec-2-sub {
@@ -46,7 +54,7 @@ div#header-top-right {
     display: inline;
     width: 60%;
     text-align: right;
-    margin: 1em auto 1em -41%;
+    margin: 1em auto 0.5em -41%;
     font-size: 12pt;
     font-weight: bold;
 }
@@ -92,7 +100,7 @@ div.media-item-left {
 div.media-item-right {
     width: 300px;
     height: 300px;
-    margin: auto auto 20px -301px;
+    margin: auto 0 20px -301px;
     float: right;
     border: 1px solid gray;
 }
@@ -102,13 +110,13 @@ div.tab, div.tab-selected{
     font-weight: bold;
     border: 1px solid gray;
     border-radius: 0 1em 0 0;
-    padding: 0.5em;
     text-align: center;
     width: 5em;
     background-color: cadetblue;
     color: white;
     display: inline-block;
     margin: 0;
+    padding: 0.5em;
 }
 
 div.tab-selected {
@@ -117,9 +125,9 @@ div.tab-selected {
 
 div.tab-content {
     border: 1px solid gray;
-    padding: 1em;
     width: 100%;
     text-align: center;
+    padding: 1em 0 1em 0;
 }
 
 div#tab-content4, div#tab-content2, div#tab-content3 {
@@ -127,6 +135,7 @@ div#tab-content4, div#tab-content2, div#tab-content3 {
 }
 
 div#footer {
+    display: none;
     width: 100%;
     text-align: center;
     background-color: #272f58;
@@ -145,9 +154,4 @@ a {
 
 div.blank {
     clear: both;
-}
-
-.inverted {
-    background-color: #272f58;
-    color: white;
 }

@@ -7,6 +7,7 @@ function SetFooter() {
     }
     
     document.getElementById("footer").style.top = margin_top + "px";
+    document.getElementById("footer").style.display = "block";
 }
 
 function OnLoad(){
