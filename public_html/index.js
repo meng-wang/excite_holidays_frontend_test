@@ -1,3 +1,31 @@
+var img_pos = 1;
+
+function NextImg() {
+    if(img_pos < 4) {
+        img_pos++;
+    }
+    else {
+        img_pos = 1;
+    }
+    
+    shown_imgs = document.getElementsByClassName("carousel-shown");
+    shown_imgs[0].className = "carousel-hidden";
+    document.getElementById("carousel" + img_pos).className = "carousel-shown";
+}
+
+function PreImg() {
+    if(img_pos > 1) {
+        img_pos--;
+    }
+    else {
+        img_pos = 4;
+    }
+    
+    shown_imgs = document.getElementsByClassName("carousel-shown");
+    shown_imgs[0].className = "carousel-hidden";
+    document.getElementById("carousel" + img_pos).className = "carousel-shown";
+}
+
 function SetFooter() {
     if (typeof window.innerWidth !== "undefined") {
             margin_top = window.innerHeight - 40;
@@ -63,18 +91,22 @@ function SplitText() {
     to_be_shown_col2.style.display = "block";
 }
 
-function ShowTab(tab_content_name) {
-    tabs = document.getElementsByClassName("tab-content");
+function ShowTab(tab_name, tab_content_name) {
+    tab_contents = document.getElementsByClassName("tab-content");
+    tabs = document.getElementsByClassName("tab-selected");
     
-    for(i=0; i < tabs.length; i++) {
-        tabs[i].style.display = "none";
+    for(i=0; i < tab_contents.length; i++) {
+        tab_contents[i].style.display = "none";
     }
     
     document.getElementById(tab_content_name).style.display = "block";
+    tabs[0].className = "tab";
+    document.getElementById(tab_name).className = "tab-selected";
 }
 
 function OnLoad(){
     SetFooter();
     SplitText();
+    window.setInterval(function(){NextImg();}, 3000);
 }
 
