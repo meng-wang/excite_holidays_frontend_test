@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="index.css">
         <script type="text/javascript" src="index.js"></script>
     </head>
-    <body onload="OnLoad();" onresize="SetFooter();" >
+    <body onload="OnLoad();">
         <div id="header">
             <div id="header-top">
                 <div id="header-top-left">
@@ -48,13 +48,14 @@
                         <a href="#item3">Item 3</a>
                         <a href="#item4">Item 4</a>
                     </div>
-                    <div id="header-bottom-search">
-                        <!-- Please note, the following form action is assumed. Change accordingly. -->
-                         <form action="search.php" method="post">
-                            <input type="text">
+                    <!-- Please note, the following form action is assumed. Change accordingly. -->
+                    <form action="search.php" method="post">
+                        <div id="header-bottom-search">
+                            <input id="search-box" type="text"  onkeyup="SearchWord();">
+                            <ul id="search-suggestion"></ul>
                             <input type="button" value="search">
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                     <div class="blank"></div>
                 </div>
             </div>
@@ -79,7 +80,7 @@
                     </p>
                 </div>
                 <div class="media-item-left" title="media 5">
-                    <iframe width="300" height="300" src="http://www.youtube.com/embed/kmz7mV1WavA" frameborder="0"></iframe>
+                    <iframe width="300" height="300" src="http://www.youtube.com/embed/kmz7mV1WavA"></iframe>
                 </div>
                 <div class="media-item-right" title="media 6">
                     <h5 class="media-item-p">Small Header</h5>
@@ -109,13 +110,22 @@
                         <div class="blank"></div>
                     </div>
                     <div class="tab-content" id="tab-content2">
-                        This is tab content 2
+                        <p>
+                            The following is the kind of music I like, "The Robots" by Kraftwerk.
+                        </p>
+                        <iframe width="768" height="480" src="http://www.youtube.com/embed/VXa9tXcMhXQ"></iframe>
                     </div>
                     <div class="tab-content" id="tab-content3">
-                        This is tab content 3
+                        <p>
+                            The following is where I currently reside, on Smith St. Summer Hill.
+                        </p>
+                        <iframe width="768" height="480" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Smith+Street,+Summer+Hill,+NSW&amp;aq=0&amp;oq=Smith+Summer+Hill+NSW&amp;sll=-33.891454,151.138251&amp;sspn=0.004836,0.010568&amp;ie=UTF8&amp;hq=&amp;hnear=Smith+St,+Summer+Hill+New+South+Wales+2130&amp;t=m&amp;ll=-33.891864,151.138058&amp;spn=0.034199,0.065832&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Smith+Street,+Summer+Hill,+NSW&amp;aq=0&amp;oq=Smith+Summer+Hill+NSW&amp;sll=-33.891454,151.138251&amp;sspn=0.004836,0.010568&amp;ie=UTF8&amp;hq=&amp;hnear=Smith+St,+Summer+Hill+New+South+Wales+2130&amp;t=m&amp;ll=-33.891864,151.138058&amp;spn=0.034199,0.065832&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
                     </div>
                     <div class="tab-content" id="tab-content4">
-                        This is tab content 4
+                        <p>
+                            The following is one of my projects, <a href="http://www.haofanghan.info" >www.haofanghan.info</a>.
+                        </p>
+                        <iframe width="1000" height="600" src="http://www.haofanghan.info"></iframe>
                     </div>
                 </div>
             </div>

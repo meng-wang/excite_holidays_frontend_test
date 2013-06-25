@@ -1,4 +1,5 @@
 var img_pos = 1;
+var search_dict = new Array("Sydney", "Melbourne", "Perth", "Adelaide", "Brisbane", "Hobart", "Shanghai", "Mexico City", "Beijing");
 
 function NextImg() {
     if(img_pos < 4) {
@@ -127,6 +128,45 @@ function HideSub(top_menu_item, sub_menu_name) {
             document.getElementById(sub_menu_name).style.display = "none";
         }
     }
+}
+
+function SearchWord(text_box) {
+    //clear suggestion box
+    suggestions = document.getElementsByClassName("suggestion");
+    for(j=0; j < suggestions.length; j++) {
+        document.getElementById("search-suggestion").removeChild(suggestions[j]);
+    }
+    
+    //search keywords and add suggestions
+    search_key = document.getElementById("search-box").value.trim().toLowerCase();
+    slice_position = search_key.length;
+    
+    if(slice_position !== 0) {
+        for(i=0;i < search_dict.length; i++) {
+            if(search_key === search_dict[i].slice(0, slice_position).toLowerCase()) {
+                
+                found_suggestion = search_dict[i];
+                
+                list_item = document.createElement("li");
+                list_item.className = "suggestion";
+                list_item.onclick = function(){FillSuggestion(found_suggestion);};
+                suggestion = document.createTextNode(found_suggestion);
+                list_item.appendChild(suggestion);
+                document.getElementById("search-suggestion").appendChild(list_item);
+            }
+        }
+    }
+}
+
+function FillSuggestion(suggestion) {
+    //clear suggestion box
+    suggestions = document.getElementsByClassName("suggestion");
+    for(j=0; j < suggestions.length; j++) {
+        document.getElementById("search-suggestion").removeChild(suggestions[j]);
+    }
+    
+    //fill suggestion in search box
+    document.getElementById("search-box").value = suggestion;
 }
 
 function OnLoad(){

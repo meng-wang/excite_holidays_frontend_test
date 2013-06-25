@@ -55,7 +55,7 @@ ul#sec-1-sub, ul#sec-2-sub {
     background-color: cadetblue;
     color: white;
     font-size: 11pt;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     padding: 0.5em;
     box-shadow: 4px 4px 2px gray;
@@ -94,9 +94,26 @@ div#header-bottom-links {
 }
 
 div#header-bottom-search {
+    position: relative;
     float: right;
     width: 38%;
     margin: auto 1em auto -39%;
+}
+
+ul#search-suggestion {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    list-style: none;
+    width: 100px;
+    background-color: #272f58;
+    color: white;
+    text-align: left;
+}
+
+ul#search-suggestion>li:hover {
+    background-color: cadetblue;
+    cursor: pointer;
 }
 
 div#middle {
@@ -242,4 +259,9 @@ a:hover {
 
 div.blank {
     clear: both;
+}
+
+iframe {
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px gray;
 }
