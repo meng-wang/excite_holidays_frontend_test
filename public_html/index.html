@@ -93,16 +93,20 @@
             </div>
             <div id="tabbed">
                 <div id="tabs">
-                    <div class="tab-selected" id="tab1">TAB 1</div>
-                    <div class="tab" id="tab2">TAB 2</div>
-                    <div class="tab" id="tab3">TAB 3</div>
-                    <div class="tab" id="tab4">TAB 4</div>
+                    <div class="tab-selected" id="tab1" onclick="ShowTab('tab-content1');">TAB 1</div>
+                    <div class="tab" id="tab2" onclick="ShowTab('tab-content2');">TAB 2</div>
+                    <div class="tab" id="tab3" onclick="ShowTab('tab-content3');">TAB 3</div>
+                    <div class="tab" id="tab4" onclick="ShowTab('tab-content4');">TAB 4</div>
                 </div>
                 <div id="tab-contents">
                     <div class="tab-content" id="tab-content1">
-                        <input id="pre-button" type="button" title="Click to View Previous Image" value="&lt;">
-                        <img alt="image carousel images" src="http://lorempixel.com/640/480/">
-                        <input id="next-button" type="button" title="Click to View Next Image" value="&gt;">
+                        <div id="pre-button" title="Click to View Previous Image" >&lt;</div>
+                        <img id="carousel1" class="carousel-shown" alt="image carousel images" src="http://lorempixel.com/768/480/">
+                        <img id="carousel2" class="carousel-hidden" alt="image carousel images" src="http://lorempixel.com/769/481/">                        
+                        <img id="carousel3" class="carousel-hidden" alt="image carousel images" src="http://lorempixel.com/770/482/">                        
+                        <img id="carousel4" class="carousel-hidden" alt="image carousel images" src="http://lorempixel.com/771/483/">
+                        <div id="next-button" title="Click to View Previous Image" >&gt;</div>
+                        <div class="blank"></div>
                     </div>
                     <div class="tab-content" id="tab-content2">
                         This is tab content 2

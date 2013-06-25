@@ -63,6 +63,16 @@ function SplitText() {
     to_be_shown_col2.style.display = "block";
 }
 
+function ShowTab(tab_content_name) {
+    tabs = document.getElementsByClassName("tab-content");
+    
+    for(i=0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
+    
+    document.getElementById(tab_content_name).style.display = "block";
+}
+
 function OnLoad(){
     SetFooter();
     SplitText();

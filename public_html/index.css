@@ -125,15 +125,16 @@ div.tab, div.tab-selected{
     border-radius: 0 1em 0 0;
     text-align: center;
     width: 5em;
-    background-color: cadetblue;
-    color: white;
+    background-color: #d9d9d9;
     display: inline-block;
     margin: 0;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 div.tab-selected {
     background-color: #272f58;
+    color: white;
 }
 
 div.tab-content {
@@ -141,11 +142,45 @@ div.tab-content {
     width: 100%;
     text-align: center;
     padding: 1em 0 1em 0;
+    background-color: #d9d9d9;
 }
 
 div#tab-content4, div#tab-content2, div#tab-content3 {
     display: none;
 }
+
+div#pre-button, div#next-button {
+    float: left;
+    width: 23px;
+    height: 23px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+    margin: 225px auto auto auto;
+    background-color: #272f58;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#pre-button {
+    margin-left: 100px;
+}
+
+img.carousel-hidden, img.carousel-shown {
+    float: left;
+    width: 768px;
+    height: 480px;
+    box-shadow: 2px 2px 2px gray;
+    margin: auto 10px auto 10px;
+}
+
+img.carousel-hidden {
+    display: none;
+}
+
 
 div#fluid-text {
     margin: 2em auto 2em auto;
